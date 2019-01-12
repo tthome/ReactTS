@@ -1,0 +1,41 @@
+%styling-line {
+  content: '';
+  background: white;
+  width: 140px;
+  height: 3px;
+}
+
+.logo-container {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  max-height: 100%;
+  position: relative;
+  max-width: 60%;
+  min-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  .logo-title {
+    p {
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:first-child {
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+      }
+
+      &:last-child:before {
+        @extend %styling-line;
+        margin-right: 20px;
+      }
+
+      &:last-child:after {
+        @extend %styling-line;
+        margin-left: 20px;
+      }
+    }
+  }
+}

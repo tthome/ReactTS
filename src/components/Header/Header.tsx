@@ -1,6 +1,7 @@
 import * as React from "react";
 import "./Header.css";
 
+import Logo from './Logo/Logo';
 import Menu from './Menu/Menu';
 
 class Header extends React.Component {
@@ -8,6 +9,7 @@ class Header extends React.Component {
         return (
             <div className="header-container">
                <Menu/>
+               <Logo/>
             </div>
         );
     }
